@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Exotic Sneakers</title>
+    <link rel = "stylesheet" type= "text/css" href="home.css">
+    <script src="home.js"></script>
+</head>
+<body>
+<div class="topnav">
+    <h1>Exoctic Sneakers</h1>
+    <form action="rare.html">
+        <button class="btn">Rare Finds</button>
+    </form>
+    <form action="releases">
+        <button class="btn2">New Releases</button>
+    </form>
+</div>
+<main>
+    <p>Information on the most sought after shoes on the market.<br> It's a privilege to have any of these in your collection.</p>
+    <br>
+    <div class="row">
+        <div class="column">
+            <img src="images/chicago.jpg" style="width:100%">
+            <img src="images/dior.jpg" style="width:100%">
+            <img src="images/inertia.jpg" style="width:100%">
+            <img src="images/rust.jpg" style="width:100%">
+        </div>
+        <div class="column">
+            <img src="images/offwhite.jpg" style="width:100%">
+            <img src="images/sail.jpg" style="width:100%">
+            <img src="images/scott.jpg" style="width:100%">
+            <img src="images/grateful.jpg" style="width:100%">
+        </div>
+        <div class="column">
+            <img src="images/seoul.jpg" style="width:100%">
+            <img src="images/ben.jpg" style="width:100%">
+            <img src="images/oregon.jpg" style="width:100%">
+            <img src="images/guava.jpg" style="width:100%">
+        </div>
+    </div>
+    <div class="slideshow-container">
+        <div class="mySlides">
+            <h1>ADIDAS</h1>
+        </div>
+        <div class="mySlides">
+            <h1>NIKE</h1>
+        </div>
+        <div class="mySlides">
+            <h1>JORDAN</h1>
+        </div>
+        <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+        <a class="next" onclick="plusSlides(1)">&#10095;</a>
+    </div>
+    <div class="dot-container">
+        <span class="dot" onclick="currentSlide(1)"></span>
+        <span class="dot" onclick="currentSlide(2)"></span>
+        <span class="dot" onclick="currentSlide(3)"></span>
+    </div>
+</main>
+<script type="text/javascript">
+    ScrollOut({
+        targets: 'div'
+    })
+</script>
+
+</body>
+</html>

@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Rare Finds</title>
+    <script src="home.js"></script>
+    <!--    <link rel = "stylesheet" type= "text/css" href="home.css">-->
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+        /*body css*/
+        * {
+            box-sizing: inherit;
+        }
+        body{
+            margin: 0;
+            font-family:  'Poppins', sans-serif;
+            background-color: khaki;
+        }
+        .topnav {
+            overflow: hidden;
+            background-color: khaki;
+            box-shadow: 0 0 100px rgba(0, 0, 0, 0.2)
+        }
+        .topnav h1 {
+            display: block;
+            color: white;
+            text-align: center;
+            padding: 30px;
+            text-decoration: none;
+            font-size: 50px;
+            opacity: 0.5;
+        }
+        @media screen and (max-width: 600px) {
+            .column {
+                width: 100%;
+            }
+        }
+        .btn {
+            position: absolute;
+            top: 75px;
+            right: 10px;
+            float: right;
+            color: white;
+            padding: 16px;
+            font-size: 16px;
+            border-radius: 20px;
+            cursor: pointer;
+            opacity: 0.3;
+            border: none;
+        }
+        .btn2 {
+            position: absolute;
+            top: 75px;
+            left: 10px;
+            float: left;
+            color: white;
+            padding: 16px;
+            font-size: 16px;
+            border-radius: 20px;
+            cursor: pointer;
+            opacity: 0.3;
+            border: none;
+        }
+        .btn:hover, .btn:focus, .btn2:hover, .btn2:focus {
+            background-color: khaki;
+        }
+        .card {
+            box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+            max-width: 300px;
+            margin: auto;
+            text-align: center;
+            font-family: arial;
+        }
+        .card button {
+            border: none;
+            outline: 0;
+            padding: 12px;
+            color: white;
+            background-color: white;
+            opacity: 0.5;
+            text-align: center;
+            cursor: pointer;
+            width: 50%;
+            font-size: 18px;
+        }
+        .card button:hover {
+            opacity: 0.3;
+        }
+    </style>
+    <script>
+        window.onload=function(){
+            hideInfo();
+            hideInfo2();
+            hideInfo1();
+        }
+    </script>
+</head>
+<body>
+<div class="topnav">
+    <h1>Rare Finds</h1>
+    <form action="home.html">
+        <button class="btn">Home</button>
+    </form>
+    <form action="">
+        <button class="btn2">New Releases</button>
+    </form>
+</div>
+<div class="card">
+    <img src="images/scott.jpg" style="width:100%">
+    <h1>Travis Scott Air Max 270s</h1>
+    <p id="scott">Released on May 29th 2020 for $190. Resale value now is up to $700+.</p>
+    <button type="button"onclick="showInfo(scott)">See Info</button>
+</div>
+<div class="card">
+    <img src="images/rust.jpg" style="width:100%">
+    <h1>Rust Pink Air Jordan 1 High OG</h1>
+    <p id="rust">Released on December 8th 2017 for $160. Resale value now is up to $8000+.</p>
+    <button type="button"onclick="showInfo1()">See Info</button>
+</div>
+<div class="card">
+    <img src="images/seoul.jpg" style="width:100%">
+    <h1>Seoul Jordan 3</h1>
+    <p id="seoul">Soon to be released only in Seoul, Korea. Only 30 pairs are available for $225. Resale value is expected to be $10,000+</p>
+    <button type="button"onclick="showInfo2()">See Info</button>
+</div>
+</body>
+</html>

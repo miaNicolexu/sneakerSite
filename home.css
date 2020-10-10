@@ -1,0 +1,179 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+/*body css*/
+* {
+    box-sizing: inherit;
+}
+body{
+    margin: 0;
+    font-family:  'Poppins', sans-serif;
+    background-color: pink;
+}
+.topnav {
+    overflow: hidden;
+    background-color: pink;
+    box-shadow: 0 0 100px rgba(0, 0, 0, 0.2)
+}
+.topnav h1 {
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 30px;
+    text-decoration: none;
+    font-size: 50px;
+    opacity: 0.5;
+}
+@media screen and (max-width: 600px) {
+    .column {
+        width: 100%;
+    }
+}
+main{
+    position: relative;
+    background-color: pink;
+    animation: main-animate 2s 1;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size:cover;
+}
+main p{
+    transition: 2s;
+}
+@keyframes main-animate{
+    from{
+        right: -100%;
+    }to{
+         right: 0%;
+     }
+}
+main p{
+    color: white;
+    font-size: 40px;
+    font-weight: bold;
+    font-family: 'Poppins', sans-serif;;
+    letter-spacing: 0.1em;
+    text-align: center;
+    opacity: 0.5;
+}
+.btn {
+    position: absolute;
+    top: 75px;
+    right: 10px;
+    float: right;
+    color: white;
+    padding: 16px;
+    font-size: 16px;
+    border-radius: 20px;
+    cursor: pointer;
+    opacity: 0.3;
+    border: none;
+}
+.btn2 {
+    position: absolute;
+    top: 75px;
+    left: 10px;
+    float: left;
+    color: white;
+    padding: 16px;
+    font-size: 16px;
+    border-radius: 20px;
+    cursor: pointer;
+    opacity: 0.3;
+    border: none;
+}
+.btn:hover, .btn:focus, .btn2:hover, .btn2:focus {
+    background-color: pink;
+}
+/*photo grid*/
+.row {
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap;
+    padding: 0 4px;
+}
+
+.column {
+    -ms-flex: 25%;
+    flex: 25%;
+    width: 25%;
+    padding: 0 4px;
+}
+.column img {
+    margin-top: 8px;
+    vertical-align: middle;
+    width: 100%;
+}
+@media screen and (max-width: 800px) {
+    .column {
+        -ms-flex: 50%;
+        flex: 50%;
+        max-width: 50%;
+    }
+}
+@media screen and (max-width: 600px) {
+    .column {
+        -ms-flex: 100%;
+        flex: 100%;
+        max-width: 100%;
+    }
+}
+/*Bottom Scrollbar*/
+.slideshow-container {
+    position: relative;
+    background: white;
+    opacity: 0.3;
+}
+.mySlides {
+    display: none;
+    padding: 80px;
+    text-align: center;
+}
+.prev, .next {
+    cursor: pointer;
+    position: absolute;
+    top: 50%;
+    width: auto;
+    margin-top: -30px;
+    padding: 16px;
+    color: #888;
+    font-weight: bold;
+    font-size: 20px;
+    border-radius: 0 3px 3px 0;
+    user-select: none;
+}
+.next {
+    position: absolute;
+    right: 0;
+    border-radius: 3px 0 0 3px;
+}
+.prev:hover, .next:hover {
+    background-color: mistyrose;
+    color: white;
+}
+
+.dot-container {
+    text-align: center;
+    padding: 20px;
+    background: pink;
+    opacity: 0.5;
+}
+
+.dot {
+    cursor: pointer;
+    height: 15px;
+    width: 15px;
+    margin: 0 2px;
+    background-color: lightpink;
+    border-radius: 50%;
+    display: inline-block;
+    transition: background-color 0.6s ease;
+}
+.active, .dot:hover {
+    background-color: mistyrose;
+}
+.mySlides h1 {
+    color: pink;
+    font-size: 100px;
+    letter-spacing: 20px;
+}
+
